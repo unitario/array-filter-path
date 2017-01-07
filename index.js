@@ -11,7 +11,6 @@ Array.filterPath = function (path, val, objs) {
       return val === path.split('.').reduce( (pre, cur) => { return pre ? pre[cur] : undefined }, obj|| self )
    });
 
-   if (objs.length === 0) { return [] }
-   else { return objs }
+   return objs
 
 }
